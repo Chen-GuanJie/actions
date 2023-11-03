@@ -22,7 +22,7 @@ class MainTest {
 	@Rule
 	public ExpectedException exception = ExpectedException.none();
 	@test
-	void test2() throws IllegalArgumentException{
+	void test3() throws IllegalArgumentException{
 		exception.expect(IllegalArgumentException.class);
 		exception.expectMessage("Both numbers must be non-negative.");
 		Main main = new Main();
