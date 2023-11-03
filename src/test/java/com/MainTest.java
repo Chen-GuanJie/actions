@@ -20,7 +20,7 @@ class MainTest {
 	}
 
 	@Rule
-	public ExpectedException exception = ExpectedException.none();
+	public IllegalArgumentException exception = IllegalArgumentException.none();
 	@test
 	void test3() throws IllegalArgumentException{
 		exception.expect(IllegalArgumentException.class);
