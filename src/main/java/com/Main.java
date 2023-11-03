@@ -15,7 +15,7 @@ public class Main {
 			if (Integer.MAX_VALUE - a < b) {
 				throw new ArithmeticException("Integer overflow when trying to add " + a + " + " + b);
 			}
-			int result = a + b;
+			int result = a - b;
 			logger.log(Level.INFO, "Successfully added {0} and {1} to get {2}", new Object[]{a, b, result});
 			return result;
 		} catch (IllegalArgumentException | ArithmeticException e) {
